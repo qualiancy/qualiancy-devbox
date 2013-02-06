@@ -17,7 +17,7 @@ standard veewee ubuntu boxes.
 #### Additional Features
 
 - git-core
-- [dtrace4linux](https://github.com/dtrace4linux/linux) version `20130205a`
+- [planned] [dtrace4linux](https://github.com/dtrace4linux/linux) 
 - [planned] zsh, vim, tmux, and custom profiles
 
 #### Related Projects
@@ -33,17 +33,17 @@ standard veewee ubuntu boxes.
 
 #### Getting Started
 
-1. clone repo
+##### Clone Repo:
 
     $ git clone 
 
-2. initialize local rvm
+##### Initialize Local RVM:
 
     $ cd my-devbox
 
 RVM should detect local `.rvmrc` and initialize the gemset. You may need to confirm.
 
-3. start build cycle
+##### Start Build Cycle:
 
 This project uses `make`.
 
@@ -55,22 +55,22 @@ and validation, the box will be added to vagrant as your `BOX` name. If you did 
 
 #### Upgrading
 
-1. clean previous version
+##### Clean Previous Version
 
 If you want to dispose or upgrade your devbox, you the `make clean` command. You will need to use the same
 `BOX` name that was used to create.
 
     $ make clean BOX=my-devbox
 
-2. pull the latest version
+##### Pull the Latest Version
 
     $ git pull
 
-3. re-initialize the gemset
+##### Re-initialize the Gemset
 
     $ cd ..
     $ cd my-devbox
 
-4. make
+##### Build
 
 View the new README for possible changes.
