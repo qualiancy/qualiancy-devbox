@@ -17,7 +17,7 @@ It contains a number of enhancements beyond the standard veewee ubuntu boxes.
 #### Additional Features
 
 - git-core
-- [planned] [dtrace4linux](https://github.com/dtrace4linux/linux) 
+- [dtrace4linux](https://github.com/dtrace4linux/linux) 
 - [planned] zsh, vim, tmux, and custom profiles
 
 #### Related Projects
