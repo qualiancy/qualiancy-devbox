@@ -2,6 +2,7 @@
 
 RUBY_VERSION=1.9.3-p286
 RUBYGEM_VERSION=1.8.24
+DTRACE_VERSION=20130205a
 
 date > /etc/vagrant_box_build_time
 
@@ -67,6 +68,18 @@ rm rubygems-$RUBYGEM_VERSION.tgz
 # Add /opt/ruby/bin to the global path as the last resort so
 # Ruby, RubyGems, and Chef/Puppet are visible
 echo 'PATH=$PATH:/opt/ruby/bin/'> /etc/profile.d/vagrantruby.sh
+
+# Installing dtrace4linux
+wget ftp://crisp.dyndns-server.com/pub/release/website/dtrace/dtrace-$DTRACE_VERSION.tar.bz2
+tar xjf dtrace-$DTRACE_VERSION.tar.bz2
+cd dtrace-$DTRACE_VERSION
+./tools/get-deps.pl -y
+make all
+sudo make install
+sudo make load
+cd ..
+rm -rf dtrace-$DTRACE_VERSION
+rm dtrace-$DTRACE_VERSION.tar.bz2
 
 # Installing vagrant keys
 mkdir /home/vagrant/.ssh
