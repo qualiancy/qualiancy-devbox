@@ -35,7 +35,7 @@ It contains a number of enhancements beyond the standard veewee ubuntu boxes.
 
 ##### Clone Repo:
 
-    $ git clone 
+    $ git clone https://github.com/qualiancy/qualiancy-devbox.git my-devbox
 
 ##### Initialize Local RVM:
 
