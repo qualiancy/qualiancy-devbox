@@ -2,9 +2,9 @@
 
 > Building a better tomorrow.
 
-The Qualiancy Devbox is a `veewee` project that will initialize a [vagrant](http://www.vagrantup.com/) box
-that can be used as the basis for a local development environment. It contains a number of enhancements beyond the
-standard veewee ubuntu boxes.
+The Qualiancy Devbox is a [veewee](https://github.com/jedi4ever/veewee) project that will initialize a 
+[vagrant](http://www.vagrantup.com/) box that can be used as the basis for a local development environment. 
+It contains a number of enhancements beyond the standard veewee ubuntu boxes.
 
 #### Base Features
 
